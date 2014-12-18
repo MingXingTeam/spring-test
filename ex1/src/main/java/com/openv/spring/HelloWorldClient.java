@@ -25,7 +25,7 @@ public class HelloWorldClient {
      */
 //    public HelloWorldClient() {
 //    	try{
-//	        InputStream ins = new FileInputStream("spring/application-config.xml");
+//	        InputStream ins = new FileInputStream("spring/application-config.xml");//路径不对的。需要再调整
 //	        BeanFactory factory = new XmlBeanFactory((Resource) ins);
 //	        HelloWorld hw = (HelloWorld)factory.getBean("fileHelloWorld");
 //	        log.info(hw.getContent());
@@ -34,10 +34,13 @@ public class HelloWorldClient {
 //    	}
 //    }}
     
-    public HelloWorldClient(){
-    	
-    	
-    }
+//    public HelloWorldClient(){
+//    	//前提：引入包
+//    	ClassPathXMLApplicationContext appContext = new ClassPathXMLApplicationContext(new String[]{"application-config.xml"});
+//    	BeanFactory factory = (BeanFactory)appContext;
+//    	HelloWorld hw = (HelloWorld)factory.getBean("fileHelloWorld");
+//    	log.info(hw.getContent());
+//    }
 	
     public static void main(String[] args) {
         new HelloWorldClient();
