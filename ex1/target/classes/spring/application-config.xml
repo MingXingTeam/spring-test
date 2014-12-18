@@ -8,9 +8,13 @@
     <!-- Uncomment and add your base-package here:
          <context:component-scan
             base-package="org.springframework.samples.service"/>  -->
+            
+            
  	<bean name="fileHelloWorld"
           class="com.openv.spring.HelloWorld">
+          <!-- 有参构造函数 -->
           <constructor-arg>
+          	   <!-- 构造函数的参数：指向另外一个bean的引用 -->
                <ref bean="fileHello"/>
           </constructor-arg>    
      </bean>
