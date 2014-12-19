@@ -14,7 +14,7 @@ public class App {
 		
 		
     	//获得实例对象
-        Person person =  (Person)ctx.getBean("Person");
+        Person person =  (Person)ctx.getBean("Person.Class");
         System.out.println("Person: "+person);
 	}
 
