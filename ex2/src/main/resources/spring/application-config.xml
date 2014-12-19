@@ -31,7 +31,7 @@
 
    <bean id="helloworldbeanTarget"
    		class="com.openv.spring.HelloWorld"/>
-
+	<!-- 通知器或切面 -->  
    <bean id="loggingBeforeAdvisor"
       class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
       <property name="advice">

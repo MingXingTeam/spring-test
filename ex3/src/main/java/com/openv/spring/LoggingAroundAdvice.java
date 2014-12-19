@@ -10,10 +10,10 @@ public class LoggingAroundAdvice implements MethodInterceptor {
 	
 	@Override
 	public Object invoke(MethodInvocation invocation) throws Throwable {
-		log.info("before: The Invocation of getContent()");
+		log.info("before:调用getContent()方法前");
         invocation.getArguments()[0] = "luoshifei";
         invocation.proceed();
-        log.info("after: The Invocation of getContent()");
+        log.info("after:调用getContent()方法后");
 
         return null;
 	}
